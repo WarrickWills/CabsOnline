@@ -1,0 +1,17 @@
+CREATE TABLE `bookings` (
+	`bookingNumber` INT(11) NOT NULL AUTO_INCREMENT,
+	`bookingDate` DATE NOT NULL,
+	`bookingTime` TIME NOT NULL,
+	`firstName` VARCHAR(255) NOT NULL,
+	`lastName` VARCHAR(255) NOT NULL,
+	`phoneNumber` INT(65) NOT NULL,
+	`unitNumber` VARCHAR(255) NULL DEFAULT NULL,
+	`streetNumber` INT(6) NOT NULL,
+	`streetName` VARCHAR(255) NOT NULL,
+	`suburb` VARCHAR(255) NOT NULL,
+	`destinationSuburb` VARCHAR(255) NOT NULL,
+	`pickupDate` DATE NOT NULL,
+	`pickupTime` TIME NOT NULL,
+	`genStatus` VARCHAR(255) NOT NULL,
+	PRIMARY KEY (`bookingNumber`)
+)

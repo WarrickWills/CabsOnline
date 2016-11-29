@@ -1,0 +1,60 @@
+<html XMLns="http://www.w3.org/1999/xHTML"> 
+  <head> 
+    <title>CabsOnline</title> 
+    <script type="text/javascript" src="booking.js"> </script>
+    <link href="stylesheet.css" rel="stylesheet">
+  </head> 
+  <body>
+  	<h1>CabsOnline Taxi Booking</h1>
+
+  	<div id="end" class = "output"> 
+	    <p></p>  
+	</div> 
+	<div id="request" class = "request">
+	<form>
+		<p><h2>Customer Details</h2>
+		
+		First Name:<br />
+		<input type="text" id='firstName' class = "textIn" name="firstName" required><br />
+		
+		Last Name:<br />
+		<input type="text" id='lastName' class = "textIn" name="lastName" required><br />
+		
+		Mobile Number:<br />
+		<input type="text" name="mobileNumber" class = "textIn" required></p><br />
+		
+		<p><h2>Pickup Details</h2>
+		
+		Pick Up Date:<br />
+		<input type="date" name="pickupDate" class = "textIn" value="yyyy-MM-dd" style="text-align: center" maxlength="10" required><br />
+		
+		Pick Up Time:<br />
+		<input type="time" name="pickupTime" class = "textIn" value="00:00:00" style="text-align: center" maxlength="8" required></p><br />
+		
+		<p><h2>Pickup Location</h2>
+		
+		Unit Number:<br />
+		<input type="text" name="unitNum" class = "textIn" size="4" maxlength="4"> <br />
+		
+		Street Number:<br />
+		<input type="text" name="streetNum" class = "textIn" size="4" maxlength="4" required><br />
+		
+		Street Name:<br />
+		<input type="text"  name="streetAdd" class = "textIn" required><br />
+		
+		Suburb:<br />
+		<input type="text"  name="suburb" class = "textIn" required><br />
+		
+		<br />
+		<p><h2>Destination Suburb</h2>
+		<input type="text"  name="destinationSuburb" class = "textIn" required></p>
+
+		<div align = "center">
+			<input name="submit" type = "button" class = "formBut" onClick = "booking('booking.php','end', firstName.value, lastName.value, mobileNumber.value, pickupDate.value, pickupTime.value, unitNum.value, streetNum.value, streetAdd.value, suburb.value, destinationSuburb.value) " value = "Make Booking">
+		</div>
+	</form>
+	</div>
+	<br />
+	<a href="home.html" class="homeBut">Home </a>
+ </body> 
+</html>

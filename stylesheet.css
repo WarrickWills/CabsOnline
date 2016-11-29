@@ -1,0 +1,72 @@
+
+html {
+    background-image: url("background.jpg"); 
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
+	text-align: center;
+}
+
+
+h1 {
+	text-align: center;
+	font-size: 100px;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+h2 {
+	text-align: center;
+	font-size: 25px;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+.homeBut {
+	background-color:transparent;
+	display:inline-block;
+	font-size:30px;
+	cursor:pointer;
+	font-family: Tahoma, Geneva, sans-serif;
+	text-decoration:none;
+}
+
+div.output {
+    width: 100%; 
+    background-color: #00FFFF;
+}
+
+div.request {
+	border: 3px solid black;
+	padding: 5px 5px;
+	text-align: left;
+	width:60%;
+	float:center;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+input.textIn {
+	 width: 100%;
+	 padding: 8px 15px;
+	 margin: 8px 0;
+	 display: inline-block;
+	 text-align: left;
+}
+
+input.formBut {
+	background-color: black;
+	color: white;
+	padding: 7px 45px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 5px;
+	width: 60%;
+}
+
+table.center {
+    margin-left:auto; 
+    margin-right:auto;
+}
+  
+body {
+	text-align:center;
+}

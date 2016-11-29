@@ -1,0 +1,30 @@
+<html XMLns="http://www.w3.org/1999/xHTML"> 
+  <head> 
+    <title>CabsOnline</title> 
+    <script type="text/javascript" src="admin.js"></script>
+    <link href="stylesheet.css" rel="stylesheet">
+  </head> 
+  <body>
+	
+  	<h1>CabsOnline Admin Page</h1>
+
+  	<div id="confirmation" class = "output"> 
+	    <p></p>  
+	</div> 
+	<br />
+	<div class = "request">
+		<form>
+			<div align = "center">
+				<h2>Display Pick-up Requests</h2>
+				<input name="requests" type="button" class = "formBut" onclick="requesting('requesting.php', 'confirmation', 'date')" value='Display Pick-up Requests'><br /><br />
+				<h2>Assign Taxi Booking Number</h2>
+				<input type="text" class = "textIn" name="bookingNum">
+				<input name="assign" type ="button" class = "formBut" onclick ="assigning('assign.php','confirmation', bookingNum.value) " value = "Assign Taxi">
+			</div>
+		</form>
+	</div>
+
+	<br />
+	<a href="home.html" class="homeBut">Home </a>
+ </body> 
+</html>
